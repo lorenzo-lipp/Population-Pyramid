@@ -1,0 +1,71 @@
+body {
+  background-color: lightgray;
+  overflow: hidden;
+}
+
+svg {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  shape-rendering: crispEdges;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+#graph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  padding: 30px 0px;
+  box-shadow: 0px 0px 5px black;
+  background-color: whitesmoke;
+}
+
+#tooltip {
+  display: none;
+  position: absolute;
+  padding: 12px;
+  border: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  background-color: #F5F3F2;
+  color: #000000;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#title {
+  font-size: 30px;
+}
+
+#y-label {
+  font-size: 20px;
+}
+
+#x-label {
+  font-size: 20px;
+  transform: rotate(-90deg) translate(-256px, -234px);
+}
+
+.male, #subtitle-male {
+  fill: royalblue;
+  font-weight: bold;
+}
+
+.female, #subtitle-female {
+  fill: crimson;
+  font-weight: bold;
+}
+
+.male:hover, .female:hover {
+  opacity: 0.7;
+}
